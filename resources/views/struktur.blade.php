@@ -45,13 +45,13 @@
                             <div class="space-y-1">
                                 <p class="text-gray-500 text-xs italic">{{ $member['prodi'] ?? '-' }}</p>
                                 
-                                @if(!empty($member['phone']))
+                                @if(!empty($member['instagram']))
                                     <div class="mt-4 pt-4 border-t border-gray-50">
-                                        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $member['phone']) }}" 
+                                        <a href="https://instagram.com/{{ ltrim($member['instagram'], '@') }}" 
                                            target="_blank"
-                                           class="inline-flex items-center text-green-600 hover:text-green-700 font-medium text-xs transition-colors">
-                                            <i class="fab fa-whatsapp mr-1.5 text-sm"></i>
-                                            Hubungi via WhatsApp
+                                           class="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium text-xs transition-colors">
+                                            <i class="fab fa-instagram mr-1.5 text-sm"></i>
+                                            Kunjungi Instagram
                                         </a>
                                     </div>
                                 @endif

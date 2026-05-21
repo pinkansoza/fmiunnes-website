@@ -25,7 +25,6 @@ class OrganizationStructureForm
                         ->label('Foto')
                         ->image()
                         ->directory('organization')
-                        ->required()
                         ->columnSpanFull(),
 
                     TextInput::make('name')
@@ -43,11 +42,10 @@ class OrganizationStructureForm
                         ->required(),
                         
 
-                    TextInput::make('phone')
-                        ->label('No. Telepon / WhatsApp')
-                        ->tel()
-                        ->placeholder('Contoh: 628123456789')
-                        ->required(),
+                    TextInput::make('instagram')
+                        ->label('Instagram')
+                        ->prefix('@')
+                        ->placeholder('username'),
                 ])
                 ->columns(2)
                 ->addActionLabel('Tambah Anggota Baru')
