@@ -21,7 +21,12 @@ class LinkServiceForm
                 TextInput::make('url')
                     ->url()
                     ->required()
-                    ->label('Link Google Form'),
+                    ->label('Link Aktif'),
+                TextInput::make('tulisan_tombol')
+                    ->label('Tulisan Tombol')
+                    ->placeholder('Isi Formulir')
+                    ->helperText('Tulisan yang tampil di tombol link (default: "Isi Formulir")')
+                    ->maxLength(50),
             ]);
     }
 }

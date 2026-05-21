@@ -55,7 +55,7 @@
                             
                             <a href="{{ $item->url }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between group-hover:text-blue-600 transition-colors">
                                 <span class="font-bold text-gray-800 group-hover:text-blue-600 text-[15px]">
-                                    Isi Formulir
+                                    {{ $item->tulisan_tombol ?? 'Isi Formulir' }}
                                 </span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-6 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />

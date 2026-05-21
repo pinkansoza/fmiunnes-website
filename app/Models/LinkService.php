@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class LinkService extends Model
 {
-    protected $fillable = ['judul', 'keterangan', 'url'];
+    protected $fillable = ['judul', 'keterangan', 'url', 'tulisan_tombol'];
 }

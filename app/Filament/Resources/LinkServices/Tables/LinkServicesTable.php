@@ -18,6 +18,9 @@ class LinkServicesTable
                 TextColumn::make('url')
                     ->label('Link Aktif')
                     ->limit(50),
+                TextColumn::make('tulisan_tombol')
+                    ->label('Tulisan Tombol')
+                    ->default('Isi Formulir'),
             ])
             ->actions([
                 EditAction::make(), 
